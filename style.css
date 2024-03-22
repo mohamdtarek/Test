@@ -1,0 +1,710 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    color: #588b8b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ;
+}
+
+button {
+    padding: 10px 30px;
+    border: 1px solid #588b8b;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 1s ease;
+}
+
+button:hover {
+    padding: 10px 30px;
+    border: 1px solid #588b8b;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *HEADER* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+header {
+    width: 100%;
+    height: 5rem;
+}
+
+header .container {
+    position: fixed;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+
+header .container .logo h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    padding: 0;
+    color: hsl(19, 100%, 60%);
+
+}
+
+header .container .logo h1:hover {
+    color: hsl(19, 100%, 90%);
+}
+
+header .container .links {
+    display: flex;
+    align-items: center;
+}
+
+header .container .links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header .container .links li {
+    transition: 0.5s;
+}
+
+
+header .container .links li:hover {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FBe0c3;
+}
+
+header .container .links ul li a {
+    cursor: pointer;
+    font-size: 25px;
+    transition: 1s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header .container .links ul li a:hover {
+    color: hsl(19, 100%, 60%)
+}
+
+.background {
+    background-color: #2b2d42;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *LANDING* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.landing {
+    position: relative;
+    left: 15rem;
+    width: 80vw;
+    height: 80vh;
+}
+
+.landing .container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing .container .left-side {
+    line-height: 1.7;
+    width: 80%;
+}
+
+.landing .container .left-side h1 {
+    color: #588b8b;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.landing .container .left-side p {
+    color: #588b8b;
+}
+
+.landing .container .right-side img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *CATEGORIES* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.categories {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    background-color: #2b2d42;
+}
+
+.categories .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    padding: 10px;
+}
+
+.categories .container .left-side {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.categories .container .left-side h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 20px;
+    font-size: 45px;
+    color: #edf2f4;
+}
+
+.categories .container .left-side p {
+    color: #edf2f4;
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.categories .container .right-side {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    top: 6rem;
+}
+
+.categories .container .right-side .mini-cat {
+    text-align: center;
+    padding: 40px 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px 5px hsl(0, 100%, 90%);
+    background-color: #8d99ae;
+    color: white;
+}
+
+.categories .container .right-side span {
+
+    color: hsl(31, 88%, 67%);
+    padding: 0;
+    font-size: 70px;
+}
+
+.categories .container .right-side .mini-cat h5 {
+    font-size: 15px;
+    padding: 10px 0;
+    color: #edf2f4;
+}
+
+.categories .container .right-side .mini-cat p {
+    padding-bottom: 50px;
+    color: #edf2f4;
+}
+
+
+.courses {
+    margin-top: 80px;
+    background-color: #006989;
+}
+
+.courses .courses-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #f1e0c5;
+}
+
+.courses .courses-text h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #eaebed;
+    line-height: 1.7;
+}
+
+.courses .courses-text p {
+    font-size: 20px;
+    color: #eaebed;
+}
+
+.courses .container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+}
+
+.courses img {
+    width: 90%;
+
+}
+
+.courses .art {
+    text-align: center;
+    padding: 20px 0;
+    margin: 30px 20px;
+    background-color: #eaebed;
+    border: 1px solid #006989;
+    transition: all 0.5s ease-in-out;
+}
+
+.courses .art:hover {
+    box-shadow: 30px 10px 10px 5px #2b2d42;
+}
+
+.courses .art__mid {
+    position: relative;
+    top: -2rem;
+}
+
+.courses .art-text h3 {
+    color: #006989;
+}
+
+.courses .art-text p {
+    color: #006989;
+}
+
+.faqs {
+    margin: 100px 0;
+    background-color: white;
+    padding: 20px;
+}
+
+.faqs-heading {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faqs-heading h1 {
+    padding-bottom: 30px;
+    font-size: 45px;
+    color: #003459;
+}
+
+.faqs .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faqs-art {
+    padding: 20px;
+    background-color: #006989;
+    cursor: pointer;
+}
+
+.faqs-icon {
+    display: flex;
+    align-items: center;
+}
+
+.faqs-icon span {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.faqs-text h3 {
+    color: white;
+}
+
+.faqs-text p {
+    color: white;
+    display: none;
+
+}
+
+.open p {
+    display: block;
+}
+
+.comments {
+    height: 100%;
+    width: 100%;
+    padding: 60px;
+    background-color: #2b2d42;
+}
+
+.comments .heading {
+    margin: 0 auto 40px;
+    text-align: center;
+    width: 800px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 36px;
+}
+
+.comments .heading h1 {
+    padding-top: 20px;
+    font-size: 45px;
+    color: hsl(31, 88%, 67%);
+    ;
+}
+
+.comments .heading p {
+    padding: 10px;
+    color: #2b2d42;
+}
+
+
+.comments .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+
+
+}
+
+.comment {
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid hsl(0, 100%, 90%);
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.comment:hover {
+    box-shadow: 0px 0px 10px 1px white;
+}
+
+.text-com h3,
+p {
+    color: white;
+    padding: 5px 0;
+}
+
+.comment img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.comment button {
+    background-color: hsl(31, 88%, 67%);
+    color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+footer {
+    width: 100%;
+    padding: 30px;
+    height: fit-content;
+    overflow: hidden;
+    background-color: hsl(210, 92%, 5%);
+    border-top: 1px solid white;
+    margin-top: 5px;
+
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    width: 100%;
+    height: 220px;
+}
+
+footer .left {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .left h3 {
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+footer .left h3 span {
+    color: white;
+}
+
+footer .left ul li {
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+footer .left ul li span {
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    padding-right: 5px;
+    color: white;
+    width: 100%;
+    height: 10px;
+
+}
+
+footer .left ul li a {
+    color: black;
+    font-size: 10px;
+    color: white;
+}
+
+footer .mid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .mid h3 {
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+}
+
+footer .mid p {
+    font-size: 10px;
+    padding-top: 0px;
+    line-height: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+footer .midd {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .midd h3 {
+    font-size: 15px;
+    padding-bottom: 0px;
+    font-weight: 900;
+    color: white;
+}
+
+footer .midd h3 span {
+    color: white;
+}
+
+footer .midd p {
+    line-height: 2rem;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 0;
+    color: white;
+}
+
+footer .right .rightt {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .right h1 {
+    color: white;
+    font-size: 15px;
+}
+
+footer .right p {
+    font-size: 10px;
+    color: white;
+}
+
+footer p {
+    color: black;
+}
+
+footer .cont img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+}
+
+@media screen and (max-width:1024px) {
+    header .container {
+        width: 90%;
+    }
+
+    .faqs-text {
+        width: 300px;
+    }
+
+    .comments .heading {
+        width: 600px;
+    }
+
+    .comments .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .courses .container {
+        width: 800px;
+    }
+
+    .categories .right-side {
+        width: 500px;
+    }
+
+    .landing .container {
+        position: absolute;
+        margin: 0;
+        right: 10%;
+        width: 800px;
+    }
+
+    .landing .container .right-side img {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    header .logo {
+        padding: 0 15px;
+    }
+
+    header .container {
+        width: 50%;
+        position: absolute;
+    }
+
+    .landing {
+        width: 400px;
+        height: 600px;
+    }
+
+    .landing .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        width: 400px;
+        height: 700px;
+        background-color: white;
+    }
+
+    .categories .container {
+        display: block;
+    }
+
+    .categories .left-side {
+        width: 600px;
+        background-color: #2b2d42;
+    }
+}
+
+
+
+@media (max-width:576px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header .container {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .container .logo {}
+
+    .landing {
+
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+
+    .landing .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .landing .container .left-side {
+        width: 50%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .landing .container .right-side {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .categories {
+        width: 100%;
+    }
+
+    .categories .container {
+        display: block;
+        width: 100%;
+    }
+
+    .faqs {
+        width: 100%;
+    }
+
+    .faqs .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .comments {
+        width: 100%;
+    }
+
+    .comments .heading {
+        width: 100%;
+    }
+
+    .comments .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    footer {}
+
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+
+    }
+}
